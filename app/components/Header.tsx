@@ -1,4 +1,6 @@
 import { MobileNav } from "@/components/MobileNav"
+import { Search } from "./Search"
+import { AppConfig } from "@/app.config"
 
 export const Header = () => {
   return (
@@ -7,7 +9,8 @@ export const Header = () => {
         <div className="lg:hidden">
           <MobileNav />
         </div>
-        <p className="font-bold text-lg">ToolHub</p>
+        <p className="font-bold text-lg">{AppConfig.title}</p>
+        <Search />
       </div>
     </header>
   )
