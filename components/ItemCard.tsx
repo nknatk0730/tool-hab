@@ -5,12 +5,12 @@ import Link from "next/link"
 
 export const ItemCard = ({
   title,
-  imageURL,
+  id,
   tags,
   href,
 }: {
   title: string;
-  imageURL: string;
+  id: string;
   tags: TagId[];
   href: string;
 }) => {
@@ -19,8 +19,8 @@ export const ItemCard = ({
       <div className="aspect-video border mb-2 rounded relative overflow-hidden">
         <Image
           fill
-          objectFit="cover"
-          src={imageURL}
+          className="object-cover"
+          src={`/images/${id}.png`}
           alt="Image
         "
         />

@@ -28,7 +28,7 @@ export default function Page() {
           title={item.title}
           tags={item.tags}
           href={item.href}
-          imageURL={item.imageURL}
+          id={item.id}
         />
       ))}
     </div>

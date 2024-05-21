@@ -2,21 +2,33 @@ import { Item } from "@/types/item";
 
 export const allItems: Item[] = [
   {
-    title: "illust",
-      tags: ['no-license-require', "illust"],
-      href: "/",
-      imageURL: "https://mini-game-psi.vercel.app/images/monster-3.svg",
+    title: "illustya",
+      tags: ['no-license-require', "illust", 'free'],
+      href: "https://www.irasutoya.com",
+      id: "irasutoya",
     },
     {
     title: "Pixabay",
-      tags: ['no-license-require', 'photo', 'illust', 'video'],
+      tags: ['no-license-require', 'photo', 'illust', 'video', 'free'],
       href: "/",
-      imageURL: "https://mini-game-psi.vercel.app/images/monster-3.svg",
+      id: "pixabay"
     },
     {
     title: "unsplash",
       tags: ['free', 'no-license-require', 'photo', 'public-domain'],
-      href: "/",
-      imageURL: "https://mini-game-psi.vercel.app/images/monster-3.svg",
+      href: "https://unsplash.com/ja",
+      id: "unsplash",
     },
+    {
+    title: "vector shelf",
+      tags: ['free', 'illust'],
+      href: "https://vectorshelf.com",
+      id: "vectorshelf",
+    },
+    {
+    title: "Lucide",
+      tags: ['free', 'icon'],
+      href: "https://lucide.dev",
+      id: "lucide",
+    }
 ] as const;
