@@ -1,7 +1,6 @@
-import { TagId } from "@/data/tag"
-import { mainTags } from "@/lib/tag";
-import { useRouter, useSearchParams } from "next/navigation"
-import { useCallback } from "react";
+import { mainTags, TagId } from "@/data/tag";
+import { useSearchParams } from "next/navigation";
+
 
 export const useTagParams = () => {
   const defaultTags = (useSearchParams().get('tags')?.split(',').filter(Boolean) ?? []) as TagId[];

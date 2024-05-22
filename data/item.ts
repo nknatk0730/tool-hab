@@ -9,7 +9,7 @@ export const allItems: Item[] = [
     },
     {
     title: "Pixabay",
-      tags: ['no-license-require', 'photo', 'illust', 'video', 'free'],
+      tags: ['no-license-require', 'photo', 'illust', 'video', 'free', 'audio'],
       href: "/",
       id: "pixabay"
     },

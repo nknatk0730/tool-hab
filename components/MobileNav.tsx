@@ -1,19 +1,15 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+  SheetTrigger
+} from "@/components/ui/sheet";
+import { mainTags } from "@/data/tag";
 import { useTagParams } from "@/hooks/tagParams";
-import { getTagLabel, mainTags } from "@/lib/tag";
-import { Menu } from "lucide-react"
+import { getTagLabel } from "@/lib/tag";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 
 export function MobileNav() {
